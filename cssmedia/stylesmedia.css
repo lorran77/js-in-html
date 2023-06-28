@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;500&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: tan;
+}
+
+h1
+{
+    font-weight: lighter;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+
+.flex-media
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border: 3px 3px 3px 3px;
+    border-radius: 15px;
+    border-color: black black black black;
+
+
+    background-color:bisque;
+    max-width: 600px;
+    width:400px;
+    margin-top: 50px;
+    margin-left: 750px;
+    padding: 25px; 
+
+}
+
+
+
+
+label 
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    font-weight: lighter;
+}
+
+
+input
+{
+    border-radius: 5px;
+    cursor: pointer;
+
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+
+    border: 0px 0px 1px 0px;
+    border-color: transparent transparent black transparent;
+    background-color: bisque;
+}
+
+input:hover
+{
+    background-color: tan;
+    transition: 1s;
+}
+
+.button
+{
+    background: linear-gradient(120deg, tan, bisque);;
+    font-weight: bold; color: black;
+
+    font-family: 'Martian Mono', monospace;
+
+    border: 1px 1px 1px 1px;
+    border-color: black;
+
+    height: 40px;
+}
+
+.button:hover
+{
+    background: linear-gradient(120deg, tan, white);
+    transition: 0.4s;
+}
+
+
+.res
+{
+    border: 1px 1px 1px 1px;
+    border-color: black;
+}
+
+
+.linkop
+{
+    font-size: 10px;
+    font-weight: lighter;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+    margin-top: 30px;
+}
+
+.linkop:hover
+{
+    border-radius: 10px;
+    background: linear-gradient(120deg, tan, white);
+    padding: 15px;
+    transition: 1s;
+}    
