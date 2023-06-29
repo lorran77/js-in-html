@@ -6,7 +6,8 @@ function calcula()
             document.getElementById('resultado').value=quadrado;
         }
 
-        function dobro()
+
+function dobro()
         { 
             let num=parseInt(document.getElementById('numero').value);
             let dobro;
@@ -14,7 +15,8 @@ function calcula()
             document.getElementById('resultadodobro').value=dobro;
         }
 
-        function parimpar()
+
+function parimpar()
         {
             let num=parseInt(document.getElementById('numero').value);
             if(num % 2 == 0)
@@ -25,5 +27,4 @@ function calcula()
             {
                 document.getElementById('resultadoparimpar').value=('impar');
             }
-
         }
