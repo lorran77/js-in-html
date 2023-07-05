@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="csslista/stylelista.css">
 
-    <title>Document</title>
+    <title>Lista</title>
 </head>
 
 <body>
@@ -18,13 +18,18 @@
     <input type="text" id="entradausuario">
     <input class="button" type="button" value="INSERIR ITEM" onclick="inserir()">
 
-
+    <h2>Lista:</h2>
     <ol id="lista">
 
-        <h2>Lista:</h2>
-        <li>Item Fixo</li>
-
     </ol>
+
+    <button class="buttonapagar" onclick="apagarprimeiro()">Remover primeiro</button>
+    <button class="buttonapagar" onclick="apagarultimo()">Remover ultimo</button>
+    
+    <input type="number" id="campoNumRemover">
+    <input type="button" class="buttonapagar" value="remover" onclick="apagarespecifico()">
+
+    
 
     <a class="linkop" href="operacoes.html">Clique aqui para mais operações</a>
     <a class="linkop" href="index.html">Clique aqui para média</a>
