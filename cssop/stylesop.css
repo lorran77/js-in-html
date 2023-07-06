@@ -7,7 +7,22 @@
 
 body
 {
-    background: linear-gradient(600deg, #ccc, tan);
+    /* background: linear-gradient(600deg, #ccc, tan); */
+    background: linear-gradient(-45deg, #283845, tan, tan, #f29559);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 h1
@@ -34,7 +49,7 @@ h1
     background-color:bisque;
     max-width: 600px;
     width:400px;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-left: 750px;
     padding: 25px; 
 
@@ -70,6 +85,8 @@ input:hover
 {
     background-color: tan;
     transition: 1s;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+    border-color: transparent transparent transparent transparent;
 }
 
 .button
@@ -119,4 +136,6 @@ input:hover
     background: linear-gradient(120deg, tan, white);
     padding: 15px;
     transition: 1s;
-}    
+} 
+
+

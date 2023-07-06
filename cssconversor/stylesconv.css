@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;500&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+   /* background: linear-gradient(600deg, #ccc, tan); */
+   background: linear-gradient(-45deg, #283845, tan, tan, #f29559);
+   background-size: 400% 400%;
+   animation: gradient 8s ease infinite;
+   height: 100vh;
+}
+@keyframes gradient {
+   0% {
+       background-position: 0% 50%;
+   }
+   50% {
+       background-position: 100% 50%;
+   }
+   100% {
+       background-position: 0% 50%;
+   }
+}
+
+h1
+{
+    font-weight: lighter;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+
+.flex-media
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border: 3px 3px 3px 3px;
+    border-radius: 15px;
+    border-color: black black black black;
+
+    background-color:bisque;
+    max-width: 600px;
+    width:400px;
+    margin-top: 150px;
+    margin-left: 750px;
+    padding: 25px; 
+}
+
+
+input
+{
+    margin-bottom: 30px;
+}
+
+select
+{
+    margin-bottom: 20px;
+}
+
+button
+{
+    margin-bottom: 20px;
+}
+
+
+
+
