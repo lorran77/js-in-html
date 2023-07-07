@@ -1,13 +1,13 @@
 // selecionando os objets atraves de seus ID  //
 const inputElement = document.querySelector('#input');
-
 const fromElement = document.querySelector('#from');
 const toElement = document.querySelector('#to');
-
 const outputElement = document.querySelector('#output');
-
-
 const messageElement = document.querySelector('#message');
+const convertButton = document.querySelector('#btn-converter');
+
+
+convertButton.addEventListener("click", Convert);
 
 
 function Convert()
@@ -48,6 +48,7 @@ function Convert()
     }
 
 
+
     // Passo 2: converter o valor em metros para o valor de saida e salvar na variavel RESULT
     let result;
 
@@ -56,17 +57,27 @@ function Convert()
         case 'm': result = meters;
         break;
 
-        case 'km': result = meters * 1000;
+        case 'km': result = meters / 1000;
         break;
 
-        case 'cm': result = meters / 100;
+        case 'cm': result = meters * 100;
         break;
 
-        case 'mm': result = meters / 1000;
+        case 'mm': result = meters * 1000;
         break;
     }
 
-
+    // Exibir o resultado no input de saida //
+    outputElement.value = result;
     
+    const fromLabel = fromElement.options[fromElement.selectedIndex].text;
+    const toLabel = toElement.options[toElement.selectedIndex].text;
 
+    // const message = inputElement + fromLabel + " equivalem a:" + result + toLabel;
+    const message = `${inputElement.value} ${fromValue} equivalem a ${result} ${toLabel}`;
+
+    messageElement.textContent = message;
 }
+
+
+
